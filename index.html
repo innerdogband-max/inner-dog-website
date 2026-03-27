@@ -67,12 +67,22 @@
   ══════════════════════════════════════ -->
   <section id="pink-section">
 
-    <!-- 3-image banner -->
+    <!-- Banner heading -->
+    <p class="banner-heading">&#9733; Choose the image for your reading &#9733;</p>
+
+    <!-- Banner images -->
     <div class="banner-images">
-      <!-- Replace srcs with your 3 banner photos -->
-      <img src="Images/banner1.png" alt="" />
-      <img src="Images/banner2.png" alt="" />
-      <img src="Images/banner3.png" alt="" style="object-position: center 60%;" />
+      <img src="Images/banner1.png" alt="" id="banner1" />
+      <img src="Images/banner2.png" alt="" id="banner2" />
+      <img src="Images/banner3.png" alt="" id="banner3" style="object-position: center 60%;" />
+    </div>
+
+    <!-- Lotus popup -->
+    <div id="lotus-overlay" onclick="closeLotus()">
+      <div id="lotus-modal" onclick="event.stopPropagation()">
+        <button id="lotus-close" onclick="closeLotus()" aria-label="Close">&times;</button>
+        <p id="lotus-modal-text"></p>
+      </div>
     </div>
 
     <!-- YouTube Video -->
@@ -122,6 +132,30 @@
     </div>
 
   </section>
+
+
+  <script>
+    const bannerMessages = {
+      'banner1': "You've drawn the Lotus, take it as a sign to trust your growth—rise above current challenges with patience and clarity, knowing you're moving toward a more enlightened and grounded version of yourself.",
+      'banner2': "You've drawn Durga, take it as a call to step into your strength—face challenges with courage and conviction, knowing you have the power to overcome obstacles and protect what truly matters.",
+      'banner3': "You've drawn the Pig, take it as a reminder to embrace abundance and stay grounded—trust that steady effort and appreciation for what you have will lead to growth and prosperity.",
+    };
+
+    Object.keys(bannerMessages).forEach(function (id) {
+      document.getElementById(id).addEventListener('click', function () {
+        document.getElementById('lotus-modal-text').textContent = bannerMessages[id];
+        document.getElementById('lotus-overlay').classList.add('active');
+      });
+    });
+
+    function closeLotus() {
+      document.getElementById('lotus-overlay').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLotus();
+    });
+  </script>
 
 </body>
 </html>
