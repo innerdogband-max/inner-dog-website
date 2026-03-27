@@ -279,6 +279,13 @@ nav {
   border-top: 1px solid #ccc;
 }
 
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
 #contact p {
   font-size: 15px;
   letter-spacing: 0.03em;
