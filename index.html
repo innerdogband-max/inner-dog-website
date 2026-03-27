@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inner Dog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#hero" class="nav-logo">
+        <!-- Replace src with your logo file e.g. Images/logo.png -->
+        <img src="Images/Logo.png" alt="Inner Dog" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <span style="display:none; font-size:22px; font-weight:700; letter-spacing:0.08em;">INNER DOG</span>
+      </a>
+
+      <div class="nav-right">
+        <!-- Spotify -->
+        <span class="nav-icon" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.441 17.293a.75.75 0 0 1-1.03.244c-2.82-1.722-6.365-2.112-10.542-1.157a.75.75 0 1 1-.334-1.463c4.571-1.043 8.492-.594 11.661 1.346a.75.75 0 0 1 .245 1.03zm1.452-3.228a.938.938 0 0 1-1.288.308c-3.226-1.983-8.142-2.558-11.959-1.4a.938.938 0 1 1-.545-1.794c4.361-1.326 9.784-.682 13.484 1.598a.937.937 0 0 1 .308 1.288zm.124-3.358c-3.868-2.296-10.243-2.508-13.938-1.387a1.125 1.125 0 0 1-.652-2.151c4.239-1.287 11.285-1.038 15.733 1.606a1.124 1.124 0 1 1-1.143 1.932z"/>
+          </svg>
+        </span>
+
+        <!-- YouTube -->
+        <span class="nav-icon" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+          </svg>
+        </span>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/innerdogband" target="_blank" rel="noopener" class="nav-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd">
+            <!-- outer rounded square -->
+            <path d="M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.3.27 16.95.07 15.67.01 15.26 0 12 0zm0 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12c0-3.2.01-3.58.07-4.85.15-3.23 1.67-4.77 4.92-4.92C8.42 2.17 8.8 2.16 12 2.16z"/>
+            <!-- inner circle ring using evenodd -->
+            <path d="M12 6.54a5.46 5.46 0 100 10.92A5.46 5.46 0 0012 6.54zm0 9a3.54 3.54 0 110-7.08 3.54 3.54 0 010 7.08z"/>
+            <!-- flash dot -->
+            <circle cx="17.44" cy="6.56" r="1.28"/>
+          </svg>
+        </a>
+
+        <a href="#tour">Tour</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+      <!-- Replace src with your hero photo e.g. Images/hero.jpg -->
+      <img src="Images/Hero.jpg" alt="Inner Dog" />
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PINK SECTION — Banner + Video
+  ══════════════════════════════════════ -->
+  <section id="pink-section">
+
+    <!-- 3-image banner -->
+    <div class="banner-images">
+      <!-- Replace srcs with your 3 banner photos -->
+      <img src="Images/banner1.png" alt="" />
+      <img src="Images/banner2.png" alt="" />
+      <img src="Images/banner3.png" alt="" style="object-position: center 60%;" />
+    </div>
+
+    <!-- YouTube Video -->
+    <div class="video-container">
+      <iframe
+        src="https://drive.google.com/file/d/1fdoCdvoeGNMw-Z7jZuCme1Qp-sHLj4OK/preview"
+        title="Inner Dog"
+        allow="autoplay"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       TOUR DATES + CONTACT SECTION
+  ══════════════════════════════════════ -->
+  <section id="tour-contact">
+
+    <!-- Tour Dates -->
+    <div id="tour">
+      <h2>Tour&nbsp; Dates</h2>
+
+      <!-- When no dates: remove style="display:none" from the line below and add it to tour-table -->
+      <p class="tour-empty" style="display:none;">More dates coming soon</p>
+
+      <div class="tour-table">
+
+        <div class="tour-row">
+          <div class="tour-date-venue">
+            <div class="date">APR 17, 2026</div>
+            <div class="venue">The Holloway</div>
+          </div>
+          <div class="tour-location">Norwich, Eng</div>
+          <div class="tour-action">
+            <a href="https://www.eventbrite.co.uk/e/ritual-error-inner-dog-rudimentary-paste-at-the-holloway-tickets-1983864362713?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQzW-BleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaf-zOr6-3NPKxMe566U4SO9HOe13l2te9seAkaec6NHWhc8tUSX2-paDRLzvg_aem_S9EZFtXIjYqSZBc5NgeLdQ" target="_blank" rel="noopener" class="tour-btn">TICKETS</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <p>Bookings: <a href="mailto:innerdogband@gmail.com">innerdogband@gmail.com</a></p>
+    </div>
+
+  </section>
+
+</body>
+</html>

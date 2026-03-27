@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+}
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+}
+
+.nav-logo img {
+  height: 58px;
+  width: auto;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-right a:hover {
+  opacity: 0.6;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.nav-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: #111;
+  transition: opacity 0.2s;
+}
+
+.nav-icon:hover svg {
+  opacity: 0.6;
+}
+
+/* ── HERO SECTION ── */
+#hero {
+  background-color: #F8FAF5;
+  padding-bottom: 0;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 100%;
+  height: 580px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-image .placeholder {
+  width: 100%;
+  max-width: 900px;
+  height: 520px;
+  background-color: #d8ddd1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+/* ── PINK SECTION ── */
+#pink-section {
+  background-color: #FAE8E8;
+  padding-bottom: 64px;
+}
+
+.banner-images {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  padding: 0 48px;
+}
+
+.banner-images img,
+.banner-images .placeholder {
+  flex: 1;
+  height: 280px;
+  object-fit: cover;
+}
+
+.banner-images .placeholder {
+  background-color: #e8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 48px 48px 16px;
+}
+
+.video-container iframe,
+.video-container .video-placeholder {
+  width: 100%;
+  max-width: 900px;
+  height: 520px;
+  display: block;
+  border: none;
+  box-shadow: 10px 10px 0 #E20D00;
+}
+
+.video-placeholder {
+  background-color: #e8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+/* ── TOUR + CONTACT SECTION ── */
+#tour-contact {
+  background-color: #F8FAF5;
+  padding: 80px 48px;
+}
+
+/* Tour Dates */
+#tour {
+  max-width: 900px;
+  margin: 0 auto 80px;
+}
+
+#tour h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #111;
+}
+
+.tour-empty {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: #888;
+  text-align: center;
+  padding: 24px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.tour-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tour-row {
+  display: grid;
+  grid-template-columns: 220px 1fr auto;
+  align-items: center;
+  padding: 22px 0;
+  border-top: 1px solid #ccc;
+}
+
+.tour-row:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.tour-date-venue .date {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.tour-date-venue .venue {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.tour-date-venue .sub {
+  font-size: 13px;
+  color: #888;
+}
+
+.tour-location {
+  font-size: 14px;
+  color: #111;
+}
+
+.tour-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tour-btn {
+  display: inline-block;
+  border: 1px solid #111;
+  padding: 10px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #111;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tour-btn:hover {
+  background: #111;
+  color: #F8FAF5;
+}
+
+/* Contact */
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+#contact p {
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+
+#contact a {
+  color: #111;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  opacity: 0.6;
+}
+
+/* ── RESPONSIVE — tablet ── */
+@media (max-width: 900px) {
+  .video-container iframe,
+  .video-container .video-placeholder {
+    box-shadow: 6px 6px 0 #E20D00;
+  }
+}
+
+/* ── RESPONSIVE — mobile ── */
+@media (max-width: 768px) {
+
+  /* Nav */
+  nav {
+    padding: 16px 20px;
+  }
+
+  .nav-logo img {
+    height: 42px;
+  }
+
+  .nav-right {
+    gap: 14px;
+  }
+
+  .nav-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-right a {
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero-image img {
+    height: 260px;
+  }
+
+  /* Pink section */
+  #pink-section {
+    padding-bottom: 40px;
+  }
+
+  /* Banner: show only first image on mobile */
+  .banner-images {
+    padding: 0;
+  }
+
+  .banner-images img:nth-child(2),
+  .banner-images img:nth-child(3) {
+    display: none;
+  }
+
+  .banner-images img {
+    width: 100%;
+    height: 220px;
+    flex: none;
+  }
+
+  /* Video: use aspect ratio so it scales properly */
+  .video-container {
+    padding: 5px 20px 16px;
+  }
+
+  .video-container iframe,
+  .video-container .video-placeholder {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-shadow: 6px 6px 0 #E20D00;
+  }
+
+  /* Tour + Contact */
+  #tour-contact {
+    padding: 48px 20px;
+  }
+
+  #tour {
+    margin-bottom: 48px;
+  }
+
+  #tour h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .tour-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 0;
+  }
+
+  .tour-action {
+    justify-content: flex-start;
+  }
+}
