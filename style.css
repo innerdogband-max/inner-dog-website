@@ -76,6 +76,8 @@ nav {
   height: 580px;
   object-fit: cover;
   display: block;
+  transform: scale(0.6);
+  transform-origin: center;
 }
 
 .hero-image .placeholder {
